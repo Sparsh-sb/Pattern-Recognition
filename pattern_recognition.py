@@ -11,7 +11,6 @@ def euclidean_distance(fruit1, fruit2):
     return math.sqrt(sum((f1 - f2) ** 2 for f1, f2 in zip(fruit1_encoded, fruit2_encoded)))
 
 def find_nearest_neighbors(test_fruit, training_data, k=5):
-    """Find the k nearest neighbors for the test_fruit."""
     distances = []
     
     for fruit in training_data:
